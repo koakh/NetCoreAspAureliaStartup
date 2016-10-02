@@ -1,15 +1,21 @@
 import { inject } from 'aurelia-framework';
 import { HttpClient } from 'aurelia-fetch-client';
 
+// polyfill fetch client conditionally
+const fetch = !self.fetch ? System.import('isomorphic-fetch') : Promise.resolve(self.fetch); 
+
 @inject(HttpClient)
 export class Greeter {
 
     private greetingMessageViaApi : string;
 
-    constructor(private httpClient: HttpClient, private message: string) {
+    constructor(private httpClient: HttpClient, private message: string = "World") {
     }
 
     async activate(): Promise < void> {
+        // ensure fetch is polyfilled before we create the http client
+        await fetch;
+        
         this.httpClient.configure((config: any) => {
             config
                 .useStandardConfiguration()
@@ -18,7 +24,9 @@ export class Greeter {
         
         const http = this.httpClient;
         const response = await http.fetch("greetings");
-        this.greetingMessageViaApi = await response.json();
+        var greeting = await response.json();
+        this.greetingMessageViaApi = greeting.message;
+        console.log(this.greetingMessageViaApi);        
     }
 
     sayHello() {
