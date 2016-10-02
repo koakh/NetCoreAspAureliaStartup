@@ -16,3 +16,7 @@ git push -u origin master
 
 git remote add origin https://github.com/koakh/NetCoreAsp-AureliaStartup.git
 git push -u origin master
+
+done
+
+now use github windows to sync
