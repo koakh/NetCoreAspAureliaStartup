@@ -8,3 +8,7 @@ npm-debug.log*
 /electron.js*
 /release
 /test/coverage
+README_ORG.md
+.bak
+.part3
+.src
