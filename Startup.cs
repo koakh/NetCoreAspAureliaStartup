@@ -11,6 +11,8 @@ namespace modern
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            //Add Microsoft.AspNetCore.Cors Service
+            services.AddCors();
             //Add Microsoft.AspNetCore.Mvc Service
             services.AddMvc();
         }
@@ -33,6 +35,10 @@ namespace modern
 
             //Use StaticFiles
             app.UseStaticFiles();
+            //User Cors : Cross Origin Resource Sharing
+            app.UseCors(builder =>
+                builder.WithOrigins("http://localhost:9000")
+                    .AllowAnyHeader().AllowAnyMethod());
 
             //Wire MVC, Define Template, if no controller and action are specified, the route will default to Home/Index
             app.UseMvc(routes =>

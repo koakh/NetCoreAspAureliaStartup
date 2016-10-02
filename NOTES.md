@@ -39,7 +39,7 @@ package.json
 }, 
 
 ```
-npm start
+npm start | npm run server:dev
 ...
 
 http://localhost:9000/

@@ -4,14 +4,18 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace modern.Controllers
 {
+    public class GreetingsMessage {
+        public string Message { get; set; }
+    }
+
     [Route("api/[controller]")]
     public class GreetingsController : Controller
     {
         // GET api/values
         [HttpGet]
-        public string Get()
+        public GreetingsMessage Get()
         {
-            return "Hello World from ASP.NET Core 1.0 Web API!";
+            return new GreetingsMessage { Message = "Hello World from ASP.NET Core 1.0 Web API!!!" };
         }
 
         // GET api/values/5
