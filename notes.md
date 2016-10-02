@@ -20,8 +20,6 @@ git push -u origin master
 done
 
 now use github windows to sync
+or vscode with synchronize changes C+S+P GIT: Sync
 
-or install Visual Studio Team Services Extension in VSCode 
-https://code.visualstudio.com/Docs/editor/versioncontrol
-
-greate man
+great man
