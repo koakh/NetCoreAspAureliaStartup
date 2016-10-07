@@ -1,3 +1,3 @@
-"# NetCoreAsp-AureliaStartup" 
+NetCoreAsp-AureliaStartup 
 
-Start...
+Undefined notes....this is a simple POC to play with this awsome framework Aurelia :)

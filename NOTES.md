@@ -1,4 +1,4 @@
-....MOVED TO [blog](http://blog.koakh.com/blog/post/aspnet-core-aurelia-typescript-webpack-tutorial)
+Other....MOVED TO [blog](http://blog.koakh.com/blog/post/aspnet-core-aurelia-typescript-webpack-tutorial)
 
 Urls
 - [ClientSide](http://localhost:9000)
@@ -11,29 +11,41 @@ Urls
 
 > F5 or Debug
 
+```
+npm run server:dev
+```
+
+```
+package.json
+	...
+	"start": "npm run server:dev",
+}, 
+```
+
 ----
 #### GitHub
 
-koakh/NetCoreAsp-AureliaStartup	
-https://github.com/koakh/NetCoreAsp-AureliaStartup.git
+- [koakh/NetCoreAsp-AureliaStartup](https://github.com/koakh/NetCoreAsp-AureliaStartup.git)
 
-or create a new repository on the command line
+Create a new repository on the command line
 
+```
 echo "# NetCoreAsp-AureliaStartup" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/koakh/NetCoreAsp-AureliaStartup.git
 git push -u origin master
+```
 
 or push an existing repository from the command line
 
+```
 git remote add origin https://github.com/koakh/NetCoreAsp-AureliaStartup.git
 git push -u origin master
+```
 
-done
-
-now use github windows to sync and pull
+Now use github windows to sync and pull
 vscode with synchronize (local) 
 	C+S+P GIT: Sync
 and Pull (Remote)
@@ -42,12 +54,9 @@ and Pull (Remote)
 ----
 #### Servers
 
-**Start Client Side WebPack Server**
+**Start Server Side WebPack Server**
 
-package.json
-	...
-	"start": "npm run server:dev",
-}, 
+
 
 ```
 npm start | npm run server:dev
