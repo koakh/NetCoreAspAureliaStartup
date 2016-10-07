@@ -1,5 +1,16 @@
 ....MOVED TO [blog](http://blog.koakh.com/blog/post/aspnet-core-aurelia-typescript-webpack-tutorial)
 
+Urls
+- [ClientSide](http://localhost:9000)
+
+```npm start```
+
+> to start webpack-dev-server
+
+- [ServerSide](http://localhost:5000/api/greetings)
+
+> F5 or Debug
+
 ----
 #### GitHub
 
@@ -57,3 +68,4 @@ or
 ```
 coreclr "C:\Users\mario\Desktop\myData\Development\VisualCodeProjects\NetCoreAsp\Aurelia\NetCoreAsp-AureliaStartup\bin\Debug\netcoreapp1.0\modern.dll"
 ```
+
